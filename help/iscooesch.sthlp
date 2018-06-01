@@ -70,7 +70,8 @@ Simon Kaiser, Institute of Sociology, University of Bern, simon.kaiser@soz.unibe
 Thanks for citing this software as follows:
 
 {p 8 8 2}
-Kaiser, S. (2018). oesch: Stata module to create Oesch class schemes.
+Kaiser, S. (2018). oesch: Stata module to create Oesch class schemes. Available from 
+{browse "http://ideas.repec.org"}.
 
 
 {title:Also see}
