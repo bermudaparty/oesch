@@ -13,7 +13,7 @@ help for {cmd:iskooesch}
 {title:Description}
 
 {p 4 4 2}
-The {cmd:oesch} package consists of two programs to recode ISCO {it:(International Classification of Occupations)} codes into the class scheme proposed by Oesch (2006).
+The {cmd:oesch} package consists of two programs to recode 4 digit ISCO {it:(International Classification of Occupations)} codes into the class scheme proposed by Oesch (2006).
 
 {p 4 4 2}
 These programs are adaptations of the scripts by Amal Tawfik, which are available at
