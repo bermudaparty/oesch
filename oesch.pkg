@@ -1,0 +1,23 @@
+d 'OESCH': module to recode ISCO codes into Oesch class scheme
+d
+d  This module provides two commands to recode 4 digit ISCO-88 and ISCO-08 
+d  (International Classification of Occupations) codes into the class scheme 
+d  proposed by Oesch.
+d
+d KW: ISCO
+d KW: ISKO
+d KW: OESCH
+d
+d Requires: Stata version 7 
+d
+d Distribution-Date: 20180908
+d
+d Author: Simon Kaiser, University of Bern
+d Support: email simon.kaiser@soz.unibe.ch
+d
+F code/oesch.ado
+F code/iscooesch.ado
+F code/iskooesch.ado
+F help/oesch.sthlp
+F help/iscooesch.sthlp
+F help/iskooesch.sthlp
