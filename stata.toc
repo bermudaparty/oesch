@@ -1,0 +1,3 @@
+v 1.0.0
+d 'Oesch': create oesch class variable from ISCO and ISKO
+p oesch
