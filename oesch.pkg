@@ -15,9 +15,9 @@ d
 d Author: Simon Kaiser, University of Bern
 d Support: email simon.kaiser@soz.unibe.ch
 d
-F code/oesch.ado
-F code/iscooesch.ado
-F code/iskooesch.ado
-F help/oesch.sthlp
-F help/iscooesch.sthlp
-F help/iskooesch.sthlp
+F oesch.ado
+F iscooesch.ado
+F iskooesch.ado
+F oesch.sthlp
+F iscooesch.sthlp
+F iskooesch.sthlp
