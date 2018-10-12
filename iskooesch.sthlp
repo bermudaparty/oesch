@@ -6,31 +6,27 @@ help for {cmd:iskooesch}
 {title:iskooesch}
 
 {p 8 15 2}
-{cmd:iskooesch} {it:newvarname} {cmd:, isko(}{it:varname}{cmd:)}
+{cmd:iskooesch} {it:newvarname}, {cmd:isko(}{it:varname}{cmd:)}
   {cmd:emplrel(}{it:varname}{cmd:)} {cmd:emplno(}{it:varname}{cmd:)} [{cmd:sixteen} {cmd:eight} {cmd:five} {cmd:replace}]
   
 
 {title:Description}
 
 {p 4 4 2}
-The {cmd:oesch} package consists of two programs to recode 4 digit ISCO {it:(International Classification of Occupations)} codes into the class scheme proposed by Oesch (2006).
-
-{p 4 4 2}
-These programs are adaptations of the scripts by Amal Tawfik, which are available at
-{browse "http://people.unil.ch/danieloesch/scripts/":http://people.unil.ch/danieloesch/scripts/}. Syntax and behavior are modeled to be more or less analogous to the {cmd:isko} and {cmd:isco} packages by John Hendrickx.
+This command converts 4 digit ISCO-88 {it:(International Classification of Occupations)} codes into the class scheme proposed by Oesch (2006).
 
 {p 4 4 2}
 The {it:newvarname} argument for the {cmd:iskooesch} command can be any string. The program combines it with a class scheme indicator to create the names of the generated variables (see options {cmd:sixteen}, {cmd:eight}, {cmd:five}).
 
 {p 8 12 2}
-{cmd:iskooesch} makes the transformation into the Oesch scale based on ISCO-88 codes.
+{help iscooesch} makes the transformation into the Oesch scale based on ISCO-08 codes.
 
 
 {title:Options}
 
 {p 4 8 2}
 {cmd:isko} specifies the variable to be recoded.
-This must be a 4 digit integer containing ISCO-88 / ISCO-08 occupational codes.
+This must be a 4 digit integer containing ISCO-88 occupational codes.
 
 {p 4 8 2}
 {cmd:emplrel} specifies a categorical variable indicating the employment relation. Relevant values are: 1 = employee, 2 = self-employed, [3 = working for family business, optional]. All other values are ignored.
@@ -58,7 +54,7 @@ Oesch, D. 2006a. "Coming to grips with a changing class structure" International
 Oesch, D. 2006b. "Redrawing the Class Map. Stratification and Institutions in Britain, Germany, Sweden and Switzerland" Basingstoke: Palgrave Macmillan.
 
 {p 4 8 2}
-Tawfik, A. 2014. Various scripts for creating Oesch class variables. {browse "http://people.unil.ch/danieloesch/scripts/":http://people.unil.ch/danieloesch/scripts/}
+Tawfik, A. 2014. Various scripts for creating Oesch class variables. {browse "http://people.unil.ch/danieloesch/scripts/"}
 
 
 {title:Author}
@@ -71,10 +67,15 @@ Thanks for citing this software as follows:
 
 {p 8 8 2}
 Kaiser, S. (2018). oesch: Stata module to create Oesch class schemes. Available from 
-{browse "http://ideas.repec.org"}.
+{browse "https://ideas.repec.org/c/boc/bocode/s458490.html"}.
 
 
 {title:Also see}
+
+{p 4 4 2}
+{browse "https://github.com/sikaiser/oesch"} for most 
+up-to-date version and to report issues or feature requests.
+
 
 {p 0 21}
 On-line: help for

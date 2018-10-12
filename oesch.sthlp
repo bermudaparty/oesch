@@ -3,29 +3,11 @@
 help for {cmd:oesch}
 {.-}
 
-{title:oesch}
-
-{p 8 15 2}
-{cmd:iskooesch} {it:newvarname} {cmd:, isko(}{it:varname}{cmd:)}
-  {cmd:emplrel(}{it:varname}{cmd:)} {cmd:emplno(}{it:varname}{cmd:)} [{cmd:sixteen} {cmd:eight} {cmd:five} {cmd:replace}]
-
-{p 8 15 2}
-{cmd:iscooesch} {it:newvarname} {cmd:, isco(}{it:varname}{cmd:)}
-  {cmd:emplrel(}{it:varname}{cmd:)} {cmd:emplno(}{it:varname}{cmd:)} [{cmd:sixteen} {cmd:eight} {cmd:five} {cmd:replace}]
-  
-
-{title:Description}
+{title:Package}
 
 {p 4 4 2}
-The {cmd:oesch} package consists of two programs to recode 4 digit ISCO {it:(International Classification of Occupations)} codes into the class scheme proposed by Oesch (2006).
-
-{p 4 4 2}
-These programs are adaptations of the scripts by Amal Tawfik, which are available at
-{browse "http://people.unil.ch/danieloesch/scripts/":http://people.unil.ch/danieloesch/scripts/}. Syntax and behavior are modeled to be more or less analogous to the {cmd:isko} and {cmd:isco} packages by John Hendrickx.
-
-{p 4 4 2}
-The {it:newvarname} argument for the {cmd:iskooesch}, {cmd:iscooesch} commands can be any string.
-The program combines it with a class scheme indicator to create the names of the generated variables (see options {cmd:sixteen}, {cmd:eight}, {cmd:five}).
+The {cmd:oesch} package consists of two programs to recode 4-digit ISCO {it:(International Classification of Occupations)} codes into the class scheme proposed by Oesch (2006). The third command ({cmd:oesch}) allows to shrink existing Oesch class 
+variables into their condensed versions.
 
 {p 8 12 2}
 {help iskooesch} makes the transformation into the Oesch scale based on ISCO-88 codes.
@@ -33,25 +15,41 @@ The program combines it with a class scheme indicator to create the names of the
 {p 8 12 2}
 {help iscooesch} makes the transformation into the Oesch scale based on ISCO-08 codes.
 
+{p 4 4 2}
+These programs are adaptations of the scripts by Amal Tawfik, which are available at
+{browse "http://people.unil.ch/danieloesch/scripts/"}. Syntax and behavior are modeled to be more or less analogous to the {cmd:isko} and {cmd:isco} packages by John Hendrickx.
+
+
+{title:oesch}
+  
+{p 8 15 2}
+{cmd:oesch} {it:newvarname}, {cmd:oesch(}{it:varname}{cmd:)}
+  [{cmd:eight} {cmd:five} {cmd:replace}]
+  
+{title:Description}
+
+{p 4 4 2}
+This command recodes a given 16-class Oesch variable into the 8- and 5-class 
+versions.
+
+{p 4 4 2}
+The {it:newvarname} argument can be any string.
+The program combines it with a class scheme indicator to create the names of the generated variables (see options {cmd:eight}, {cmd:five}).
 
 {title:Options}
 
 {p 4 8 2}
-{cmd:isko}, {cmd:isco} specify the variable to be recoded.
-This must be a 4 digit integer containing ISCO-88 / ISCO-08 occupational codes.
+{cmd:oesch} specifies the variable to be recoded. This must be an integer with 
+values from 1 to 16 (16-class version).
 
 {p 4 8 2}
-{cmd:emplrel} specifies a categorical variable indicating the employment relation. Relevant values are: 1 = employee, 2 = self-employed, [3 = working for family business, optional]. All other values are ignored.
-
-{p 4 8 2}
-{cmd:emplno} specifies a numerical variable indicating the absolute number of employees supervised. The relevant intervals for placement in the respective Oesch categories are 0, 1/9, and 10/max.
-
-{p 4 8 2}
-{cmd:sixteen}, {cmd:eight}, {cmd:five} specify which versions of the Oesch class scheme (16-class, 8-class, 5-class) are generated. If no option is given, the 16-class scheme is generated.
-The resulting variables are named oesch16_{it:newvarname}, oesch8_{it:newvarname}, oesch5_{it:newvarname} respectively.
+{cmd:eight}, {cmd:five} specify which versions of the Oesch class scheme (8-class, 5-class) are generated. If no option is specified, the 8-class version is 
+generated.
+The resulting variables are named oesch8_{it:newvarname}, oesch5_{it:newvarname} respectively.
 
 {p 4 8 2}
 {cmd:replace} permits to overwrite existing variables.
+
 
 {title:References}
 
@@ -66,7 +64,7 @@ Oesch, D. 2006a. "Coming to grips with a changing class structure" International
 Oesch, D. 2006b. "Redrawing the Class Map. Stratification and Institutions in Britain, Germany, Sweden and Switzerland" Basingstoke: Palgrave Macmillan.
 
 {p 4 8 2}
-Tawfik, A. 2014. Various scripts for creating Oesch class variables. {browse "http://people.unil.ch/danieloesch/scripts/":http://people.unil.ch/danieloesch/scripts/}
+Tawfik, A. 2014. Various scripts for creating Oesch class variables. {browse "http://people.unil.ch/danieloesch/scripts/"}
 
 
 {title:Author}
@@ -79,10 +77,14 @@ Thanks for citing this software as follows:
 
 {p 8 8 2}
 Kaiser, S. (2018). oesch: Stata module to create Oesch class schemes. Available from 
-{browse "http://ideas.repec.org"}.
+{browse "https://ideas.repec.org/c/boc/bocode/s458490.html"}.
 
 
 {title:Also see}
+
+{p 4 4 2}
+{browse "https://github.com/sikaiser/oesch"} for most 
+up-to-date version and to report issues or feature requests.
 
 {p 0 21}
 On-line: help for
