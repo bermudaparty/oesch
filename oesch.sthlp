@@ -25,7 +25,7 @@ These programs are adaptations of the scripts by Amal Tawfik, which are availabl
 {p 8 15 2}
 {cmd:oesch} {it:newvarname}, {cmd:oesch(}{it:varname}{cmd:)}
   [{cmd:eight} {cmd:five} {cmd:replace}]
-  
+
 {title:Description}
 
 {p 4 4 2}
