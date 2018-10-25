@@ -7,10 +7,8 @@ This module provides two commands to recode 4 digit ISCO-88 and ISCO-08 (Interna
 - By using the https://github.com/haghish/github module
 
 ## Author
-Simon Kaiser
-
-University of Bern
-
+Simon Kaiser\
+University of Bern\
 simon.kaiser@soz.unibe.ch
 
 ## See also
