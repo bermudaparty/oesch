@@ -8,7 +8,9 @@ This module provides two commands to recode 4 digit ISCO-88 and ISCO-08 (Interna
 
 ## Author
 Simon Kaiser
+
 University of Bern
+
 simon.kaiser@soz.unibe.ch
 
 ## See also
